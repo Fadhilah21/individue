@@ -1,0 +1,228 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="menu.css"/>
+<style>
+
+body {
+  background-image: url('images/flower6.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Style the body */
+body {
+  background-color: black;
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #03c03c;
+  color: white;
+  font-size: 20px;
+font-family: voga;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #03c03c;
+  color: white;
+
+}
+
+.content {
+  position: absolute; /* Position the background text */
+  center: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 97%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+.font {
+font-family: "lucida handwriting", cursive;
+font-size: 30px;
+}
+
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="index.html"><b> Home Page </b></a>
+<a href="biodata.html"><b> Biodata </b></a>
+<a href="experience.html"><b> Experience </b></a>
+<a href="education.html"><b> Education </b></a>
+<a href="family.html"><b> Family </b></a>
+<a href="gallery.html"><b> Gallery </b></a>
+<a href="others.html"><b> Poems, Song Lyrics and others <3 </b></a>
+</div>
+
+<a name="button"> </a>
+
+<div class="header">
+  <h1>BIODATA</h1>
+  
+</div>
+
+
+<div class="content">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<center>
+<div class="font">
+<h1 class="glow"> BiOdATa's vIdEOs </h1>
+</div>
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="video/bio.mp4" type="video/mp4">
+  </video>
+</div> 
+<br>
+<br>
+<br>
+<br>
+
+
+<video width="400" controls>
+  <source src="video/juling.mp4" type="video/mp4">
+</video> 
+</center>
+<br>
+<br>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a href="#button"><img align="right" src="images/top3.png"></a>
+<br>
+<br>
+
+<br>
+<footer>
+  <p>©Copyright 2021 by Fadhilah Ibrahim</p>
+</footer> 
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script>
+
+
+</footer> 
+</body>
+</html> 
